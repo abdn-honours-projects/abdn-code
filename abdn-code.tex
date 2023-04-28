@@ -1,6 +1,7 @@
 \documentclass[a4paper]{article}
 \usepackage[top=20mm, bottom=20mm, left=20mm, right=18mm, head=16mm]{geometry}
 \usepackage{listings}
+\usepackage{hyperref}
 
 % Default fixed font does not support bold face
 \DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{10} % for bold
@@ -32,6 +33,19 @@ breaklines=true
 
 \begin{document}
 \maketitle
+
+\section*{Introduction}
+
+This document template is an easy way to generate a PDF with the listings for your honours project without having to laboriously copy and paste from your IDE into Microsoft Word. We use the Listings package (\url{https://ctan.org/pkg/listings}) for this, which you can configure to do pretty printing in any language you prefer. Refer to that package's documentation for further information. 
+
+Besides submitting your code as a PDF (mostly for the convenience of your markers), I highly recommend you open the Github repository (or any other Open Source versioning service of your choice) and place a link to it both in your dissertation and in this file. 
+For example, the source code for this document is available on Github at: \url{https://github.com/abdn-honours-projects/abdn-code}.
+
+\section*{Code listings}
+
+In what follows, we enumerate all files distributed with this project, for convenience of navigation, we provide an index of all listings below:
+
+\lstlistoflistings
 
 \lstinputlisting[language=python, caption={Action}]{python/action.py}
 
